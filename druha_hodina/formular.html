@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_formular.css">
+    <title>Formulár</title>
+</head>
+<body>
+    <form action="#" method = post>
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+            <label  for="meno">Meno: </label>
+            <input type="text" name="meno" id = "meno">
+            </p>
+            <p>
+                <label for="priezvisko">Priezvisko: </label>
+                <input type="Priezvisko" name = "priezvisko" id = "priezvisko">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="text" name = "email" id = "email">
+            </p>
+            <p>
+                Pohlavie:&nbsp;&nbsp;
+                <label for="muz">Muž</label>
+                <input type="radio" name = "pohlavie" id = "muz" ><br>
+                <label for="zena" class = "zena_label" >Žena</label>
+                <input type="radio" name = "pohlavie" id = "zena"  class = "zena_radio">
+            </p>
+            <p>
+                Zručnosti: 
+                <label for="html">HTML</label>
+                <input type="checkbox" name="html" id = "html">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="css" id = "css">
+            </p>
+            <p>
+                <label for="správa">Správa:</label><br>
+                <textarea cols = "16" rows = "4"name="správa" id="správa"></textarea>
+            </p>
+            <p>
+                <input type="submit" value = "Odoslať">
+            </p>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
