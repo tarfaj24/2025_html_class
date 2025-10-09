@@ -13,5 +13,23 @@ h1 {
     text-align: right;
     display: inline-block;
     margin: 20px 4px 5px 60px;
-    padding: 60´´;
+    padding: 1%;
+
+}
+
+
+div {
+    width: 200px;
+    height: 275px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: brown;
+    border: 1px transparent rgb(255, 255, 255);
+}
+
+img.shadow {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    
 }
