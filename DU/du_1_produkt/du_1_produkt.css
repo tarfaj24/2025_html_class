@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 div.vrch_stranky {
     width: 100%;
     height: 150px;
@@ -46,6 +50,8 @@ header {
 }
 a {
     color: rgb(27, 130, 214);
+    scroll-behavior: smooth;
+
 }
 
 section.sekcia_cena {
@@ -105,3 +111,60 @@ a.kosik_tlacidlo {
     width: 400px;
 }
 
+p.popis_2_cast_elden_ring {
+    font-family: 'times new roman', Times, serif;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 80%;
+    text-align: justify;
+}
+h2.popis_nazov {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+img.elden_ring_img {
+    width : 60%;
+    height: auto;
+    margin-left: 300px;
+    margin-top: 20px;
+    
+   
+}
+div.footer_farba {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 106, 114, 0.404);
+}
+h3.nadpis_kontakt {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: rgb(1, 65, 90);
+    
+    margin-left: 100px;
+    margin-top: -100px;
+    padding-top: 10px;
+}
+p.kontakt  {
+    font-family: 'times new roman', Times, serif;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: -10px;
+    width: 30%;
+}
+h3.nadpis_adresa {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: rgb(1, 65, 90);
+    
+    margin-left: 1000px;
+    margin-top: -80px;
+    padding-top: 10px;
+}
+p.adresa  {
+    font-family: 'times new roman', Times, serif;
+    font-size: 15px;
+    margin-left: 1000px;
+    margin-top: -10px;
+    width: 30%;
+}
