@@ -1,0 +1,75 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    margin:0 auto;
+    padding: 0 20px;
+}
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    border: 1px solid ;
+}
+header h1{
+    padding-left: 30px;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    font-size: clamp(1.3rem, 2vw, 3rem); /*min preferred max velkost vw je viewport 2.5 percent*/ 
+    font-weight: 700;
+    margin-right: auto;
+}
+nav {
+    flex: 0 1  auto;
+    margin-right: 10vw;
+}
+
+
+
+
+img.logo_restauracie {
+    flex:0 0 auto;
+    width:120px;
+    height:auto;
+    
+}
+
+ul.nadpisy {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color:black;
+    font-size: 30px;
+    list-style-type: none;
+    flex-direction: row;
+    gap:2rem;
+    border: 1px solid;
+    
+  
+    
+}
+
+
+
+ul.nadpisy li a{
+    color:black;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    
+}
+
+
+
+
+article.uvod_artikel {
+    font-family: 'Playfair Display', serif;
+    margin-top: 200px;
+}
