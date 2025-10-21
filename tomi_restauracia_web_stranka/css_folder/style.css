@@ -36,6 +36,17 @@ nav {
 }
 
 
+footer {
+    background-color: #b82e1f;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
 
 
 img.logo_restauracie {
