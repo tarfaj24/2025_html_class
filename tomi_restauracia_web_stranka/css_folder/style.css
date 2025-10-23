@@ -1,0 +1,145 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color: aliceblue;
+}
+body {
+    margin:0 auto;
+    
+}
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: rgba(255,0.0,0.0,0.85);
+    padding-left:25px;
+    
+    
+}
+
+main {
+   
+    padding-bottom: 500px;
+}
+    
+    
+   
+
+header h1{
+    padding-left:3vw;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    font-size: clamp(1.3rem, 2vw, 3rem); /*min preferred max velkost vw je viewport 2.5 percent*/ 
+    font-weight: 700;
+    margin-right: auto;
+    padding-right: 5vw;
+    color:white;
+}
+nav {
+    flex: 0 1  auto;
+    margin-right: 10vw;
+
+}
+
+
+footer {
+    background-color: #b82e1f;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+
+
+
+
+img.logo_restauracie {
+    flex:0 0 auto;
+    width:clamp(5rem, 7vw,9rem);
+    height:auto;
+    
+    
+}
+
+ul.nadpisy {
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    color:white;
+    font-size: 30px;
+    list-style-type: none;
+    flex-direction: row;
+    gap:2rem;
+
+   
+    
+  
+    
+}
+
+
+
+ul.nadpisy li a{
+   
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    color:white;
+}
+
+
+
+
+
+/* main article p {
+    font-size: 1.5rem;
+} */
+
+article.uvod_article {
+    font-family: 'Playfair Display', serif;
+    width:100%;
+    margin-top: 150px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom:100px;
+}
+div.border_uvod {
+    flex:1 1 500px ;
+    font-size: clamp(20px,1.5vw,30px);
+    border: 1px solid;
+    padding:2em;
+    background-color: rgba(255,0.0,0.0,0.85);
+    display: flex;
+    flex-direction: column;
+
+}
+article p {
+    color:white;
+}
+article h1 {
+    color:white;
+}
+img.obrazok_1{
+    flex: 1 1 50px;      
+    width: 50vw; /* roztiahne sa a zmenší podľa dostupného miesta */
+    max-width: 100%;       /* nikdy sa nezväčší viac než rodič */
+    height: auto;          
+    
+
+
+}
+
+article.jedalny_listok {
+    display:flex;
+    justify-content: center;
+    
+}
