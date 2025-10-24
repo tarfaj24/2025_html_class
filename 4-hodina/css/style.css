@@ -1,0 +1,31 @@
+body {
+    background-color: aqua;
+}
+
+#block{
+    text-align: center;
+}
+
+div.parentblock { 
+    height: 400px;
+    width: 120%;
+    background-color: white;
+    margin-left: -50px;
+
+}
+div.child1{
+    background-color: blueviolet;
+    height: 100px;
+}
+div.child2{
+    background-color: red;
+    height: 100px;
+}
+div.child3{
+    background-color: yellow;
+    height: 100px;
+}
+div.child4{
+    background-color: blue;
+    height: 100px;
+}
