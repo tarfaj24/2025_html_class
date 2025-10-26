@@ -137,14 +137,65 @@ img.obrazok_1{
 
 }
 
+
+
+.controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+.controls button {
+    padding: 8px 14px;
+    border: none;
+    background: #e74c3c;       /* tvoja červená akcent */
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
+    }
+
+.controls button[aria-pressed="true"] {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+    }
+
+
+.hidden {
+  display: none !important;
+}
+
+
+
 article.jedalny_listok {
     display:flex;
-    justify-content: center;
-    border:1px solid;
     font-size: 1.5rem;
+    justify-content: center;
     
     
 }
+
+
+
+article.jedalny_listok em.male_pismo {
+    font-size: 22px;
+}
+
+article.jedalny_listok em.male_pismo_bunbonambo {
+    position: absolute;
+    font-size: 22px;
+    margin-left:250px;
+    margin-top: -27px;
+}
+
+article.jedalny_listok p em.male_pismo {
+    font-size: 20px;
+}
+
 
 
 
@@ -156,16 +207,53 @@ section.jedalny_listok_papier {
     color: black;
     flex-wrap: wrap;
     width: 70rem;
-    justify-content: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
+    justify-content: center;
+
+;
     
 }
 
-section.jedalny_listok_papier p {
-    font-family: 'Open Sans', sans-serif;
+
+
+section.jedalny_listok_papier {
+    font-family: 'Spectral';
+    font-size: 30px;
+    line-height: 36px;
 }
+
+p.doplnok_jedla {
+    font-size: 22px;
+    font-family: 'Noto Serif', serif !important;
+    
+}
+
+.nemcuon {
+    margin-top:7px;
+}
+.pokesalat {
+    margin-top:5px;
+}
+
+
+
+
+
+p.buncha {
+    margin-top: 10px;
+    line-height: 35.5px;
+}
+p.photron { 
+    margin-top: 5px;
+}
+/* p.bunnem {
+    margin-top: 16px;
+}
+p.bunxao {
+    margin-top: -20px;
+}  */
 
 div.prva_cast_jedalny_listok {
     flex:1 1 auto;
@@ -182,6 +270,7 @@ h2.nazov_jedal {
     justify-content: center;
     background-color: #e74c3c; 
     color: white;
+   
 }
 
 div.nazov_jedla_a_cena {
@@ -193,11 +282,13 @@ div.nazov_jedla_a_cena {
 div.jedlo_div {
     /* border: 1px solid; */
     max-width: 15rem;
+    
 }
 
 div.ceny_jedal {
     color: #c0392b;
     font-weight: 600;
+    line-height: 37px;
 }
 
 div.druha_cast_jedalny_listok {
@@ -222,3 +313,5 @@ footer {
     text-align: center;
     padding: 30px 10px;
 }
+
+
