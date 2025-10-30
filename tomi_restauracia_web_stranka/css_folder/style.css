@@ -150,18 +150,24 @@ img.obrazok_1{
 .controls button {
     padding: 8px 14px;
     border: none;
-    background: #e74c3c;       /* tvoja červená akcent */
+    background:#e74c3c;       /* tvoja červená akcent */
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
     height: 100px;
     width: 200px;
     font-size: 30px;
+    } 
+.controls button:hover {
+    background-color: #862217;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
     }
 
 .controls button[aria-pressed="true"] {
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    transform: translateY(-1px);
+    transform: translateY(-15px);
+    background-color: #862217;
     }
 
 
@@ -185,12 +191,6 @@ article.jedalny_listok em.male_pismo {
     font-size: 22px;
 }
 
-article.jedalny_listok em.male_pismo_bunbonambo {
-    position: absolute;
-    font-size: 22px;
-    margin-left:250px;
-    margin-top: -27px;
-}
 
 article.jedalny_listok p em.male_pismo {
     font-size: 20px;
@@ -254,6 +254,32 @@ p.photron {
 p.bunxao {
     margin-top: -20px;
 }  */
+p.menu2_up {
+    margin-top: -2px;
+}
+p.menu_2_nem_cuon_margin {
+    margin-top: 2px;
+}
+em.male_pismo_sushi_menu {
+    color: #862217;
+    font-size: 27px;
+}
+
+.nigiri_up {
+    margin-top: -3px;
+}
+
+.maki_up{
+    margin-top: -5px;
+}
+
+.tempura_up_1{
+    margin-top: -5px;
+}
+.urumaki_up{
+    margin-top: -5px;
+}
+
 
 div.prva_cast_jedalny_listok {
     flex:1 1 auto;
@@ -270,6 +296,7 @@ h2.nazov_jedal {
     justify-content: center;
     background-color: #e74c3c; 
     color: white;
+    padding: 10px;
    
 }
 
