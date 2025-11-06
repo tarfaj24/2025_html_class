@@ -25,15 +25,15 @@
     </header>
     
  
-   
+
     
    
 
     <main>
-        <article id="uvod_id" class = "uvod_article">
+        <article  class = "uvod_article">
             
             <div class="border_uvod">
-            <h1>Hoa Phuong</h1>
+            <h1 id="uvod_id">Hoa Phuong</h1>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis dolores, adipisci hic nesciunt
                  commodi labore perspiciatis voluptas itaque magnam molestiae minus beatae praesentium ab nemo corrupti 
@@ -46,9 +46,811 @@
 
         
 
-        <article id="jedalny_listok" class = jedalny_listok>
-            <h1>Jedálny lístok</h1>
+        <article id="jedalny_listok_buttons" class = jedalny_listok_buttons>
+            <div class="controls" role="tablist" aria-label="Prepínanie menu">
+                <button id="showMenu1" aria-pressed="false" aria-controls="menu1">Menu 1</button>
+                <button id="showMenu2" aria-pressed="false" aria-controls="menu2">Menu 2</button>
+                <button id="showSushi_menu" aria-pressed="true" aria-controls="sushi_menu">Sushi menu</button>
+                <button id="showSushi_set_menu" aria-pressed="true" aria-controls="sushi_set_menu">Sushi set menu</button>
+            </div>
+       </article>
+
+       <article id="jedalny_listok_id" class = jedalny_listok> 
+
+
+            <section class="jedalny_listok_papier" id = "menu1">
+
+
+                <div class="prva_cast_jedalny_listok">
+                    <h2 class="nazov_jedal">Predjedlá</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <p>Domáce tempura</p>
+                            <p>krevety <em class="male_pismo">&nbsp;&nbsp;&nbsp;4ks</em></p>
+                            <em class="male_pismo"> vypražané krevety, omáčka</em>
+                            <br>
+                            <br>
+                            <p>Nem <em class="male_pismo">&nbsp;&nbsp;&nbsp;2ks</em></p>
+                            <em class="male_pismo">vypražané ryžové rolky, omáčka</em>
+                            <br>
+                            <br>
+                            <p>Nem cuốn <em class="male_pismo">&nbsp;&nbsp;&nbsp;2ks</em></p>
+                            <em class="male_pismo">ryžový papier, zelenina, ryžové rezance, krevety,
+                            kuracie mäso, vajcia, sladkokyslá omáčka</em>
+                            <br>
+                            <br>
+                            <p>Poke šalát <em class="male_pismo">&nbsp;&nbsp;&nbsp;350g </em></p>
+                            <br>
+                            <p class="doplnok_jedla">Kuracie</p>
+                            <br>
+                            
+                            <p class="doplnok_jedla">Lososové</p>
+                            <br>
+                            
+                            <em class="male_pismo">šalát, mrkva, uhorky, avokádo, sezam, zelené fazule, mango, omáčka</em>
+                            <br>
+                            <br>
+                            <p>Poke <em class="male_pismo">&nbsp;&nbsp;&nbsp;350g </em></p>
+                            <br>
+                            <p class="doplnok_jedla">Kuracie</p>
+                            <br>
+                            
+                            <p class="doplnok_jedla">Lososové</p>
+                            <br>
+
+                            <em class="male_pismo">ryža, šalát, mrkva, uhorky, avokádo, sezam,
+                                 zelené fazule, cvikla, mango, omáčka</em>
+                                
+
+                        </div>
+                        <div class="ceny_jedal">
+                            <p>5,5€</p>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="nemcuon">4,5€</p>
+                            <br><br><br>
+                            
+                            <p>4,5€</p>
+                            <br><br><br><br><br><br><br>
+                            <p class="pokesalat">8,5€</p>
+                            <br>
+                            <p class="pokesalat">9,5€</p>
+                            <br><br><br><br><br><br><br>
+                            <p class="posun_v_css_kuracia_a_lososove">10,5€</p>
+                            <br>
+                            <p class="posun_v_css_kuracia_a_lososove">11,5€</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+
+                    <h2 class="nazov_jedal">Polievky</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <p>Ostrokyslá <em class="male_pismo">&nbsp;&nbsp;&nbsp; 300ml</em></p>
+                            <br>
+                            <p>Tom Yum <em class="male_pismo">&nbsp;&nbsp;&nbsp; 500ml</em> </p>
+                           
+                        </div>
+                        <div class="ceny_jedal">
+                            <p>2,5€</p>
+                            <br>
+                            <p>6,5€</p>
+                      
+                        </div>
+                    </div>
+
+                    <br>
+                
+                    <br>
+                    <br>
+                    
+
+                 
+
+                    
+                    
+
+                </div>
+
+                <div class="druha_cast_jedalny_listok">
+                     
+
+                    <h2 class="nazov_jedal">Vietnamské špeciality</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Phở <em class="male_pismo">&nbsp;&nbsp;&nbsp; 700ml</em></p>
+                           <br>
+                            <p class="doplnok_jedla">Bò (Hovädzie)</p>
+                           <br>
+                           <p class="doplnok_jedla">Gà (Kuracie)</p>
+                           <br>
+                          
+                           <p>Bún Bò Nam Bộ </p>
+                           <em class="male_pismo">350g</em><br><br>
+                           
+                           <em class="male_pismo">ryžové rezance, hovädzie mäso, klíčky, šalát, koriander, pražená cibuľa,
+                            mrkva, arašidy, sladkokyslá omáčka
+                           </em>
+                           <br>
+                           <br>
+                           <p>Bún chả <em class="male_pismo">&nbsp;&nbsp;&nbsp; 350g</em></p>
+                           <em class="male_pismo">ryžové rezance, bravčové mäso na grile, šalát, koriander, sladkokyslá omáčka</em>
+                           <br><br>
+                           <p>Phở trộn <em class="male_pismo">&nbsp;&nbsp;&nbsp; 350g</em></p>
+                           <br>
+                           <p class="doplnok_jedla">Gà (Kuracie)</p>
+                           <br>
+                           <p class="doplnok_jedla">Tofu</p>
+                           <br>
+                           <em class="male_pismo">široké ryžové rezance, koriander, mäta, klíčky, arašídy, pražená cibuľa, tamarindová omáčka</em>
+                           <p>Bún nem</p>
+                           <em class="male_pismo">vypražané ryžové rolky, ryžové rezance, šalát, koriander, sladkokyslá omáčka </em>
+                           <p>Bún xào</p>
+                           <br>
+                           <p class="doplnok_jedla">Bò (hovädzie)</p>
+                            <br>
+                            <p class="doplnok_jedla">Gà (kuracie) </p>
+                           <br>
+                            <p class="doplnok_jedla">tôm (krevety)</p>
+                           <br>
+                            <em class="male_pismo">opekané ryžové rezance, zelenina, pražená cibuľa</em>
+
+                            
+
+                    
+                        </div>
+                        <div class="ceny_jedal">
+                           <br>
+                           <br>
+                           <p>9,5€</p>
+                           <br>
+                           <p>8,5€</p>
+                           <br>
+                           <p>9,5€</p>
+                           <br><br><br><br><br><br><br><br>
+                            
+                           <p class="buncha">9,5€</p>
+                           <br><br><br><br><br><br><br>
+                           <p class="photron">9,5€</p>
+                           <br>
+                           <p class="photron">8,5€</p>
+                           <br><br><br><br><br>
+                           <p class="bunnem">9,5€</p>
+                           <br><br><br><br><br><br>
+                           <p class="bunxao">9,5€</p>
+                           <br>
+                           <p class="bunxao">8,5€</p>
+                           <br>
+                           <p class="bunxao">9,5€</p>
+                          
+                        </div>
+                    </div>
+
+                
+
+
+
+                </div>
+
+                
+            </section>
+
+
+
+            <section class="jedalny_listok_papier" id = "menu2">
+
+            <div class="prva_cast_jedalny_listok">
+                    <h2 class="nazov_jedal">Vietnamské špeciality</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <p>Tradičné Mì xào</p>
+                            <em class="male_pismo">350g</em>
+                            <br><br>
+                            <p class="doplnok_jedla">Hovädzie</p>
+                            <br>
+                            <p class="doplnok_jedla">Kuracie</p>
+                            <br>
+                            <p class="doplnok_jedla">Krevety</p>
+                            <br>
+                            <em class="male_pismo">Opekaná jasmínová ryža, vajcia, zmes zeleniny, pražená cibuľa</em> <br><br>
+                            <p>Com Rang</p>
+                            <br>
+                            <p class="doplnok_jedla">Hovädzie</p>
+                            <br>
+                            <p class="doplnok_jedla">Kuracie</p>
+                            <br>
+                            <p class="doplnok_jedla">Krevety</p> <br>
+                            <br>
+                            <em class="male_pismo">Opekaná jasmínová ryža, vajcia, zmes zeleniny, pražená cibuľa</em><br><br>
+                            <p>Nem cuốn</p><br><br>
+                            
+                            <em class="male_pismo">ryžový papier, zelenina, ryžové rezance, krevety, bravčové mäso, vajcia, sladkokyslá omáčka</em>
+                            
+                        </div>
+                        <div class="ceny_jedal">
+                            <br><br><br>
+                            <p>5,5€</p>
+                            <br>
+                            <p>4,5€</p>
+                            <br>
+                            <p>6,5€</p>
+                            <br><br><br><br><br><br><br>
+                            <p class="menu2_up">4,5€</p>
+                            <br>
+                            <p class="menu2_up">4,5€</p>
+                            <br>
+                            <p class="menu2_up">4,5€</p>
+                            <br><br><br><br><br><br>
+                            <p class="menu_2_nem_cuon_margin">4,5€</p>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+      
+                   
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="druha_cast_jedalny_listok">
+                     
+
+                    <h2 class="nazov_jedal">Nigiri</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                           <br>
+                           <p>Krevety</p>
+
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>4,5€</p>
+                           <br>
+                           <p>5,5€</p>
+                           <br>
+                           <p>4,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+                     <h2 class="nazov_jedal">Urumaki/Sezam</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Losos, avokádo</p>
+                            <p>a mango</p>
+                           <br>
+                           <p>Dragon (krevety, </p>
+                           <p>avokádo a uhorky)</p>
+                           <br>
+                           <p>Tuniak, avokádo</p>
+                           <p>a mango</p>
+                           <br>
+                           <p>Avokádo, uhorky,</p>
+                           <p>a mango</p>
+
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>8,5€</p>
+                           <br>
+                           <br>
+                           <p>8,5€</p>
+                           <br>
+                           <br>
+                           <p>9,5€</p>
+                           <br>
+                           <br>
+                           <p>8,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                       <h2 class="nazov_jedal">Futo maki</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                           <br>
+                           <p>Mix</p>
+                           
+
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>8€</p>
+                           <br>
+                           <p>8,9€</p>
+                           <br>
+                           <p>9,9€</p>
+                          
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                       <h2 class="nazov_jedal">Tataki</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                           
+
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>8,5€</p>
+                           <br>
+                           <p>9,5€</p>
+                          
+                        </div>
+                    </div>
+
+                
+
+
+
+                </div>
+
+                
+            </section>
+
+
+
+
+
+
+
+           
+            <section class="jedalny_listok_papier" id = "sushi_menu">
+                <div class="prva_cast_jedalny_listok">
+                    <h2 class="nazov_jedal">Maki</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                            <p >Losos</p>
+                            <br>
+                            <p>Avokádo</p>
+                            <br>
+                            <p>Tuniak</p>
+                            <br>
+                            <p>Uhorky</p>
+                            <br>
+                            <p>Mango</p>
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">1 rolka</em><br><br>
+                            <p class="maki_up">5,5€</p>
+                            <br>
+                            <p class="maki_up">4,5€</p>
+                            <br>
+                            <p class="maki_up">6,5€</p>
+                            <br>
+                            <p>4,5€</p>
+                            <br>
+                            <p>5,5€</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+
+                    <h2 class="nazov_jedal">Tempura</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                            <p>Losos a avokádo</p>
+                            <br>
+                            <p>Krevety, avokádo, </p>
+                            <p>uhorky a mango</p>
+                            <br>
+                            <p>Tofu </p>
+                            <br>
+                            <p>Uhorky</p>
+                            <br>
+                            <p>Mango</p>
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">1 rolka</em><br><br>
+                            <p class="tempura_up_1">5,5€</p>
+                            <br>
+                            <p >4,5€</p>
+                            <br >
+                            <br>
+                            <p class="tempura_up_1">6,5€</p>
+                            <br>
+                            <p class="tempura_up">4,5€</p>
+                            <br>
+                            <p class="tempura_up">5,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+
+                     <h2 class="nazov_jedal">Sashimi</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">4ks</em><br><br>
+                           <p>6€</p>
+                           <br>
+                           <p>7€</p>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <h2 class="nazov_jedal">Tobiko bed</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>6€</p>
+                           <br>
+                           <p>7€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                 
+
+                    
+                    
+
+                </div>
+
+                <div class="druha_cast_jedalny_listok">
+                     
+
+                    <h2 class="nazov_jedal">Nigiri</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                           <p>Losos</p>
+                           <br>
+                           <p >Tuniak</p>
+                           <br>
+                           <p >Krevety</p>
+
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">2ks</em><br><br>
+                           <p class="nigiri_up">4,5€</p>
+                           <br>
+                           <p class="nigiri_up">5,5€</p>
+                           <br>
+                           <p class="nigiri_up">4,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+                     <h2 class="nazov_jedal">Urumaki/Sezam</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                           <p>Losos, avokádo</p>
+                            <p>a mango</p>
+                           <br>
+                           <p>Dragon (krevety, </p>
+                           <p>avokádo a uhorky)</p>
+                           <br>
+                           <p>Tuniak, avokádo</p>
+                           <p>a mango</p>
+                           <br>
+                           <p>Avokádo, uhorky,</p>
+                           <p>a mango</p>
+
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">1 rolka</em><br><br>
+                           <p class="urumaki_up">8,5€</p>
+                           <br>
+                           <br>
+                           <p>8,5€</p>
+                           <br>
+                           <br>
+                           <p class="urumaki_up">9,5€</p>
+                           <br>
+                           <br>
+                           <p class="urumaki_up">8,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                       <h2 class="nazov_jedal">Futo maki</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                           <br>
+                           <p>Mix</p>
+                           
+
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">1 rolka</em><br><br>
+                           <p>8€</p>
+                           <br>
+                           <p>8,9€</p>
+                           <br>
+                           <p>9,9€</p>
+                          
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                       <h2 class="nazov_jedal">Tataki</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <br><br>
+                           <p>Losos</p>
+                           <br>
+                           <p>Tuniak</p>
+                           <br>
+                           <em class="male_pismo">avokádo, uhorky, mango</em>
+                           
+
+                        </div>
+                        <div class="ceny_jedal">
+                            <em class="male_pismo_sushi_menu">1 rolka</em><br><br>
+                           <p>8,5€</p>
+                           <br>
+                           <p>9,5€</p>
+                          
+                        </div>
+                    </div>
+
+                
+
+
+
+                </div>
+
+                
+            </section>
+
+
+
+
+
+
+
+
+
+
             
+            <section class="jedalny_listok_papier" id = "sushi_set_menu">
+
+
+                <div class="prva_cast_jedalny_listok">
+                    <h2 class="nazov_jedal">Losos Heaven</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <p>6ks Maki</p>
+                            <br>
+                            <p>2ks Nigiri</p>
+                            <br>
+                            <p>8ks Urumaki</p>
+                            <br>
+                        </div>
+                        <div class="ceny_jedal">
+                            <br><br>
+                            <p>17,5€</p>
+                           
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+
+                    <h2 class="nazov_jedal">Hoa Phuong set</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <p>8ks Dragon</p>
+                            <br>
+                            <p>3ks Maki losos </p>
+                            <p>3ks Maki tuniak</p>
+                            <br>
+                            <p>2ks Nigiri losos </p>
+                            
+                            <p>2ks Nigiri tuniak</p>
+                            <br>
+                            <p>3ks Sashimi losos</p>
+                        </div>
+                        <div class="ceny_jedal">
+                            <br><br><br>
+                            <p>26,5€</p>
+                            
+                    
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+
+                     <h2 class="nazov_jedal">Haru zen</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Vegánske Maki</p>
+                           <p>18ks</p>
+                          
+                        
+                        </div>
+                        <div class="ceny_jedal">
+                           <p>12,5€</p>
+                          
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <h2 class="nazov_jedal">Golden Chigga</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            
+                           <p>Tempura krevety</p>
+                           <p>10ks</p>
+                           <br>
+                           <p>2ks Nigiri avokádo</p>
+                           <br>
+                           <p>3ks Maki uhorka</p>
+                           <br>
+                           <p>3ks Maki avokádo</p>
+                        </div>
+                        <div class="ceny_jedal">
+                            <br><br><br>
+                           <p>18,5€</p>
+                           
+                           
+                        </div>
+                    </div>
+
+                    <br>
+                 
+
+                    
+                    
+
+                </div>
+
+                <div class="druha_cast_jedalny_listok">
+                     
+
+                    <h2 class="nazov_jedal">Family set</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                            <em>4-6 ľudí</em><br><br>
+                           <p>3ks Maki losos</p>
+                           <p>3ks Maki tuniak</p>
+                           <p>3ks Maki avokádo</p>
+                           <p>3ks Maki uhorky</p>
+                           <p>8ks Dragon</p>
+                           <p>8ks Uzumaki losos</p>
+                           <p>8ks Futomaki mix</p>
+                           <p>2ks Nigiri losos</p>
+                           <p>2ks Nigiri tuniak</p>
+                           <p>2ks Nigiri krevety</p>
+                           <p>3ks Sashimi losos</p>
+                           <p>3ks Sashimi tuniak</p>
+                           <p>10ks Tempura maki krevety</p>
+                          
+
+                        </div>
+                        <div class="ceny_jedal">
+                          <br> <br><br><br><br><br><br>
+                           <p>68,5€</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    
+                     <h2 class="nazov_jedal">Custom</h2>
+                    <br>
+                    <div class="nazov_jedla_a_cena">
+                        <div class="jedlo_div">
+                           <p>Podľa výberu</p>
+                           
+
+                        </div>
+                    </div>
+                
+
+                
+
+
+
+                </div>
+
+                
+            </section>
+
+            
+
         </article>
 
         
@@ -62,5 +864,6 @@
         <p>Email: info@hoaphuong.sk</p>
         <p>&copy; 2025 Hoa Phượng</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

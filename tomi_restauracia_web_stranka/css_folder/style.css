@@ -1,4 +1,5 @@
 
+
 * {
     margin:0;
     padding:0;
@@ -6,24 +7,31 @@
 }
 html{
     background-color: aliceblue;
+    font-size: 16px;
 }
 body {
     margin:0 auto;
     
 }
 header {
+    position:fixed;
+    top:0;
+    width:100%;
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    background-color: rgba(255,0.0,0.0,0.85);
+    background-color: rgb(240, 46, 46);
     padding-left:25px;
+    border:1px solid blue;
     
     
     
 }
 
+
 main {
-   
+    margin-top: 200px;
+    border: 3px solid green;
     padding-bottom: 500px;
 }
     
@@ -49,12 +57,6 @@ nav {
 }
 
 
-footer {
-    background-color: #b82e1f;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-}
 
 
 
@@ -100,33 +102,30 @@ ul.nadpisy li a{
 
 
 
-/* main article p {
-    font-size: 1.5rem;
-} */
 
 article.uvod_article {
     font-family: 'Playfair Display', serif;
     width:100%;
-    margin-top: 150px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom:100px;
+
 }
 div.border_uvod {
     flex:1 1 500px ;
-    font-size: clamp(20px,1.5vw,30px);
+    font-size: clamp(17px,1.5vw,30px);
     border: 1px solid;
     padding:2em;
-    background-color: rgba(255,0.0,0.0,0.85);
+    background-color:  rgb(240, 46, 46);;
     display: flex;
     flex-direction: column;
 
 }
-article p {
+article.uvod_article p {
     color:white;
 }
-article h1 {
+article.uvod_article h1 {
     color:white;
 }
 img.obrazok_1{
@@ -139,8 +138,208 @@ img.obrazok_1{
 
 }
 
+
+
+.controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+.controls button {
+    padding: 8px 14px;
+    border: none;
+    background:#e74c3c;       /* tvoja červená akcent */
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
+    } 
+.controls button:hover {
+    background-color: #862217;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    }
+
+.controls button[aria-pressed="true"] {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transform: translateY(-15px);
+    background-color: #862217;
+    }
+
+
+.hidden {
+  display: none !important;
+}
+
+
+
 article.jedalny_listok {
     display:flex;
+    font-size: 1.5rem;
     justify-content: center;
     
+    
 }
+
+
+
+article.jedalny_listok em.male_pismo {
+    font-size: 22px;
+}
+
+
+article.jedalny_listok p em.male_pismo {
+    font-size: 20px;
+}
+
+
+
+
+
+section.jedalny_listok_papier {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: black;
+    flex-wrap: wrap;
+    width: 70rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    justify-content: center;
+
+;
+    
+}
+
+
+
+section.jedalny_listok_papier {
+    font-family: 'Spectral';
+    font-size: 30px;
+    line-height: 36px;
+}
+
+p.doplnok_jedla {
+    font-size: 22px;
+    font-family: 'Noto Serif', serif !important;
+    
+}
+
+.nemcuon {
+    margin-top:7px;
+}
+.pokesalat {
+    margin-top:5px;
+}
+
+
+
+
+
+p.buncha {
+    margin-top: 10px;
+    line-height: 35.5px;
+}
+p.photron { 
+    margin-top: 5px;
+}
+/* p.bunnem {
+    margin-top: 16px;
+}
+p.bunxao {
+    margin-top: -20px;
+}  */
+p.menu2_up {
+    margin-top: -2px;
+}
+p.menu_2_nem_cuon_margin {
+    margin-top: 2px;
+}
+em.male_pismo_sushi_menu {
+    color: #862217;
+    font-size: 27px;
+}
+
+.nigiri_up {
+    margin-top: -3px;
+}
+
+.maki_up{
+    margin-top: -5px;
+}
+
+.tempura_up_1{
+    margin-top: -5px;
+}
+.urumaki_up{
+    margin-top: -5px;
+}
+
+
+div.prva_cast_jedalny_listok {
+    flex:1 1 auto;
+    border: 2px solid rgb(240, 46, 46);
+    color: black;
+    padding:2rem;
+    width: 400px;
+    
+    
+}
+
+h2.nazov_jedal {
+    display: flex;
+    justify-content: center;
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px;
+   
+}
+
+div.nazov_jedla_a_cena {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.jedlo_div {
+    /* border: 1px solid; */
+    max-width: 15rem;
+    
+}
+
+div.ceny_jedal {
+    color: #c0392b;
+    font-weight: 600;
+    line-height: 37px;
+}
+
+div.druha_cast_jedalny_listok {
+    flex: 1 1 auto;
+    width: 400px;
+
+    border: 2px solid rgb(240, 46, 46);
+    border-left: none;
+    color: black;
+    padding:2rem;
+}
+
+.jedalny_listok_papier:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+footer {
+    background-color:  rgb(240, 46, 46);;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+
