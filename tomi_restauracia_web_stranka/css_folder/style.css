@@ -11,18 +11,27 @@ html{
 }
 body {
     margin:0 auto;
-    
+   
 }
+    
 header {
+    background-color: rgb(0, 0, 0);
+    border:1px solid rgb(69, 69, 139);
+    width: 100%;
+}
+.header_container {
+    display:block;
     position:fixed;
     top:0;
-    width:100%;
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    background-color: rgb(240, 46, 46);
+    
     padding-left:25px;
     border:1px solid blue;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
     
     
     
@@ -31,6 +40,11 @@ header {
 .header_content{
     
 }
+
+  
+    
+    
+
 
 main {
     margin-top: 200px;
