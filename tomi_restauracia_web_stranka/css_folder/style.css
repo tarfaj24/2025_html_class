@@ -15,23 +15,26 @@ body {
 }
     
 header {
-    background-color: rgb(0, 0, 0);
-    border:1px solid rgb(69, 69, 139);
+    position: fixed;
+    top:0;
+    display: block;
+    margin-top:0;
+    background-color:  rgb(240, 46, 46);
     width: 100%;
+    
+    
+
 }
 .header_container {
-    display:block;
-    position:fixed;
+    max-width: 2100px;
+    margin: 0 auto;
     top:0;
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    
     padding-left:25px;
     border:1px solid blue;
-    width: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
+  
     
     
     
@@ -49,7 +52,7 @@ main {
     padding-bottom: 500px;
 }
     
-    
+
    
 
 header h1{
@@ -64,12 +67,24 @@ header h1{
     padding-right: 5vw;
     color:white;
 }
+
+
 nav {
     flex: 0 1  auto;
     margin-right: 10vw;
-
+    
 }
 
+
+  
+.article_uvod_container {
+    max-width: 2100px;
+    margin: 0 auto;
+    display:flex;   
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+}
 
 
 
@@ -127,13 +142,13 @@ article.uvod_article {
 
 }
 div.border_uvod {
-    flex:1 1 500px ;
+   
+    width: 50vw;
     font-size: clamp(17px,1.5vw,30px);
     border: 1px solid;
     padding:2em;
     background-color:  rgb(240, 46, 46);;
-    display: flex;
-    flex-direction: column;
+   
 
 }
 article.uvod_article p {
@@ -141,12 +156,12 @@ article.uvod_article p {
 }
 article.uvod_article h1 {
     color:white;
-}
+}  
 img.obrazok_1{
-    flex: 1 1 50px;      
+     
     width: 50vw; /* roztiahne sa a zmenší podľa dostupného miesta */
-    max-width: 100%;       /* nikdy sa nezväčší viac než rodič */
-    height: auto;          
+        /* nikdy sa nezväčší viac než rodič */
+    
     
 
 
