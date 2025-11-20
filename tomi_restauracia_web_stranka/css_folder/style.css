@@ -15,34 +15,31 @@ body {
 }
     
 header {
-    position: fixed;
     top:0;
-    display: block;
-    margin-top:0;
     background-color:  rgb(240, 46, 46);
+    
     width: 100%;
-    
-    
-
+    position:fixed;
+    z-index: 2;
 }
 .header_container {
-    max-width: 2100px;
-    margin: 0 auto;
-    top:0;
+    display:flex;
+    
+    
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    
     padding-left:25px;
     border:1px solid blue;
-  
-    
+    max-width: 2100px;
+    margin: 0 auto;
+    background-color:  rgb(240, 46, 46);
+
     
     
 }
 
-.header_content{
-    
-}
 
   
     
@@ -55,7 +52,7 @@ main {
     padding-bottom: 500px;
 }
     
-
+    
    
 
 header h1{
@@ -70,24 +67,14 @@ header h1{
     padding-right: 5vw;
     color:white;
 }
-
-
 nav {
     flex: 0 1  auto;
     margin-right: 10vw;
-    
+
 }
 
 
-  
-.article_uvod_container {
-    max-width: 2100px;
-    margin: 0 auto;
-    display:flex;   
-    flex-direction:row;
-    flex-wrap: wrap;
-    
-}
+
 
 
 
@@ -138,20 +125,26 @@ ul.nadpisy li a{
 article.uvod_article {
     font-family: 'Playfair Display', serif;
     width:100%;
+    max-width: 2100px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding-bottom:100px;
 
 }
+
+
+
+
 div.border_uvod {
-   
-    width: 50vw;
+    flex:1 1 500px ;
     font-size: clamp(17px,1.5vw,30px);
     border: 1px solid;
     padding:2em;
-    background-color:  rgb(240, 46, 46);;
-   
+    background-color:  rgb(240, 46, 46);
+    display: flex;
+    flex-direction: column;
 
 }
 article.uvod_article p {
@@ -159,16 +152,29 @@ article.uvod_article p {
 }
 article.uvod_article h1 {
     color:white;
-}  
+}
+
+
+
+#uvod_id {
+    scroll-margin-top: 190px;
+}
+
+#jedalny_listok_id {
+    scroll-margin-top: 280px;
+}
+
 img.obrazok_1{
-     
+    flex: 1 1 50px;      
     width: 50vw; /* roztiahne sa a zmenší podľa dostupného miesta */
-        /* nikdy sa nezväčší viac než rodič */
-    
+    max-width: 100%;       /* nikdy sa nezväčší viac než rodič */
+    height: auto;          
     
 
 
 }
+
+
 
 
 
@@ -196,8 +202,10 @@ img.obrazok_1{
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transform: translateY(-5px);
     }
+    
 
 .controls button[aria-pressed="true"] {
+    z-index: 1;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transform: translateY(-15px);
     background-color: #862217;
@@ -365,7 +373,10 @@ div.druha_cast_jedalny_listok {
   transform: scale(1.03);
   transition: 0.2s;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 3;
+  
 }
+
 
 footer {
     background-color:  rgb(240, 46, 46);;

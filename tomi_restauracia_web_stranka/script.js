@@ -1,45 +1,7 @@
-//     // const btnSushi = document.getElementById('showSushi');
-//     // const btnMenu2 = document.getElementById('showMenu2');
 
-//     // const sushi = document.getElementById('jedalny_listok_sushi_menu');
-//     // const menu2 = document.getElementById('menu2');
-
-//     // sushi.classList.add('hidden');
-//     // sushi.setAttribute('aria-hidden', 'true');
-    
-
-//     // // funkcia, ktorá prepne viditeľnosť
-//     // function showSection(showEl, hideEl, buttonToPress, otherButton) {
-//     //   // skryjeme ten, čo má zmiznúť
-//     //   hideEl.classList.add('hidden');
-//     //   hideEl.setAttribute('aria-hidden', 'true');
-
-//     //   // zobrazíme ten, čo má byť viditeľný
-//     //   showEl.classList.remove('hidden');
-//     //   showEl.setAttribute('aria-hidden', 'false');
-
-//     //   // aktualizujeme stav tlačidiel (pre a11y)
-//     //   buttonToPress.setAttribute('aria-pressed', 'true');
-//     //   otherButton.setAttribute('aria-pressed', 'false');
-//     // }
-
-//     // // pripojíme event listenery
-//     // btnSushi.addEventListener('click', () => {
-//     //   showSection(sushi, menu2, btnSushi, btnMenu2);
-//     // });
-
-//     // btnMenu2.addEventListener('click', () => {
-//     //   showSection(menu2, sushi, btnMenu2, btnSushi);
-//     // });
-
-//   // vyberieme všetky tlačidlá a všetky sekcie
-
-//   // Vyberieme všetky tlačidlá a sekcie
-
-//   // Vyberieme všetky tlačidlá v ovládacom paneli
-
+const buttons = document.querySelectorAll('.controls button');
   document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.controls button');
+  
   const sections = document.querySelectorAll('.jedalny_listok_papier');
 
   // Najprv skryjeme všetky okrem prvej sekcie
@@ -68,6 +30,8 @@
     buttons.forEach(btn => {
       if (btn.getAttribute('aria-controls') === targetId) {
         btn.setAttribute('aria-pressed', 'true');
+        
+        
       } else {
         btn.setAttribute('aria-pressed', 'false');
       }
@@ -82,3 +46,41 @@
     });
   });
 });
+
+
+
+
+
+
+buttons.forEach(btn => {
+  const targetId = btn.getAttribute('aria-controls');
+  const sect = document.getElementById(targetId);
+
+  if (!sect) return; // ak sekcia neexistuje, preskočíme
+
+  // funkcia na update z-indexu podľa hoveru a aria-pressed
+  const updateZIndex = () => {
+    if (btn.getAttribute('aria-pressed') === 'true' && sect.matches(':hover')) {
+      btn.style.zIndex = '1000';
+    } else {
+      btn.style.zIndex = '';
+    }
+  };
+
+  // hover listener na sekciu
+  sect.addEventListener('mouseenter', updateZIndex);
+  sect.addEventListener('mouseleave', updateZIndex);
+
+  // klik na tlačidlo zmení aria-pressed, treba okamžite update
+  btn.addEventListener('click', () => {
+    // predpokladáme, že tu meníš aria-pressed podľa logiky
+    buttons.forEach(b => {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    updateZIndex();
+  });
+});
+
+
+ 
+
