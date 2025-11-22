@@ -24,16 +24,12 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    border: 3px solid yellow;
     padding:30px 30px 0px 30px;
     max-width:2600px;
     margin:0 auto;
 
 }
 
-nav {
-    border: 1px solid brown;
-}
 
 .logo {
     width: 160px;
@@ -43,12 +39,16 @@ nav {
 .main_navigation {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     color: white;
     font-family:"Poppins";
     font-size: 1.2rem;
     list-style-type: none;
     
+}
+
+.main_navigation a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -58,6 +58,7 @@ nav {
     display:flex;
     align-items:center;
 }
+
 
 .search_bar {
     display: flex;
@@ -88,4 +89,115 @@ nav {
     transition: 0.8s;
 }
 
+.main_article_flex {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10vw;
+}
 
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 10vw;
+}
+
+.section_it_services p{
+    color: white;
+    line-height: clamp(1rem, 5vw, 8rem);
+    white-space: nowrap;
+
+}
+p.it_services_small{
+    font-family: "Poppins";
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 300;
+}
+
+p.it_services_big{
+    font-family: "Poppins";
+    font-size: clamp(2rem, 6vw, 8rem);
+    font-weight: 700;
+}
+
+
+ 
+button.learn_more {
+    color:white;
+    background-color: rgb(43, 43, 228);;
+    border-radius: 5px;
+    width:170px;
+    height: 55px;
+    border:none;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button.learn_more:hover {
+    background-color: transparent;
+    border:1px solid white;
+    transition: 0.8s;
+}
+
+
+
+
+button.get_in_touch {
+    color:white;
+    background-color: transparent;
+    border:1px solid white;
+    border-radius: 5px;
+    width:170px;
+    height: 55px;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+button.get_in_touch:hover {
+    background-color:white;
+    color: blue;
+    transition: 0.8s;
+}
+
+nav.navigation_bottom {
+    margin-top: 5vw;
+    
+   
+}
+.list_for_navigation_bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color:white;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.list_for_navigation_bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+.list_for_navigation_bottom li {
+    font-family: "Poppins";
+    font-size: 2rem;
+    background-color: rgba(44, 43, 43,0.3);
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    padding:20px;
+}
+
+.list_for_navigation_bottom img{
+    width: 50px;
+    height: 50px;
+}
+
+.list_for_navigation_bottom li:hover {
+    background-color: rgb(44, 43, 43);
+    transition: 0.8s;
+}
