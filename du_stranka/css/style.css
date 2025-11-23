@@ -46,11 +46,24 @@ header {
     
 }
 
+
+
 .main_navigation a{
     text-decoration: none;
     color: white;
 }
 
+.main_navigation a:hover{
+    text-decoration: none;
+    transform: scale(1.25);
+    transition: 0.7s;
+  
+}
+
+.main_navigation li:hover::before{
+    content:"→\00a0";
+    
+}
 
 
 .navigation-li {
@@ -70,6 +83,45 @@ header {
     width: 25px;
     height: auto;
 }
+
+.search_icon{
+    transition: transform 0.3s;
+}
+
+.search_icon:hover{
+    transform: rotate(-270deg);
+    scale: 1.3;
+}
+
+.basket_icon{
+    animation-name: otacanie;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+}
+
+@keyframes otacanie{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+    }
+    25%{
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg); 
+    }
+    50%{
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg); 
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+    }
+}
+
+.basket_icon:hover{
+    animation: none; 
+    
+    scale: 1.3;
+}
+
+
 
 .button_free_consultancy {
     width: 190px;
