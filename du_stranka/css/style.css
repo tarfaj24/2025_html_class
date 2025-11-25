@@ -4,8 +4,17 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
+body {
+    background-image: url("../obrazky/background_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width:2600px;
+    margin: 0 auto;
+}
 
 
 .background_img {
@@ -252,4 +261,9 @@ nav.navigation_bottom {
 .list_for_navigation_bottom li:hover {
     background-color: rgb(44, 43, 43);
     transition: 0.8s;
+}
+
+.li_nav_bottom_set_to_row {
+    display: flex;
+    flex-direction: row;
 }
