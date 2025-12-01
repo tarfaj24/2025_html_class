@@ -6,13 +6,20 @@
     box-sizing: border-box;
 }
 html{
-    background-color: aliceblue;
     font-size: 16px;
 }
 body {
-    margin:0 auto;
-   
+    margin:0;
+    background-image: url("../obrazky/background_hoa_phuong.jpg");
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
 }
+
+
+    
+
     
 header {
     top:0;
@@ -31,10 +38,9 @@ header {
     justify-content: space-between;
     
     padding-left:25px;
-    border:1px solid blue;
     max-width: 2100px;
     margin: 0 auto;
-    background-color:  rgb(240, 46, 46);
+    background-color:  rgba(247, 218, 55);
 
     
     
@@ -47,8 +53,7 @@ header {
 
 
 main {
-    margin-top: 200px;
-    border: 3px solid green;
+    margin-top: 250px;
     padding-bottom: 500px;
 }
     
@@ -65,7 +70,8 @@ header h1{
     font-weight: 700;
     margin-right: auto;
     padding-right: 5vw;
-    color:white;
+    color:rgb(240, 46, 46);
+    
 }
 nav {
     flex: 0 1  auto;
@@ -94,7 +100,7 @@ ul.nadpisy {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    color:white;
+    color:rgb(240, 46, 46);
     font-size: 30px;
     list-style-type: none;
     flex-direction: row;
@@ -114,7 +120,7 @@ ul.nadpisy li a{
     scroll-behavior: smooth;
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.3rem, 2vw, 3rem);
-    color:white;
+    color:rgb(240, 46, 46);
 }
 
 
@@ -140,18 +146,17 @@ article.uvod_article {
 div.border_uvod {
     flex:1 1 500px ;
     font-size: clamp(17px,1.5vw,30px);
-    border: 1px solid;
     padding:2em;
-    background-color:  rgb(240, 46, 46);
+    background-color:  rgba(247, 218, 55);
     display: flex;
     flex-direction: column;
 
 }
 article.uvod_article p {
-    color:white;
+    color:rgb(240, 46, 46);
 }
 article.uvod_article h1 {
-    color:white;
+    color:rgb(240, 46, 46);
 }
 
 
@@ -188,17 +193,17 @@ img.obrazok_1{
 
 .controls button {
     padding: 8px 14px;
-    border: none;
-    background:#e74c3c;       /* tvoja červená akcent */
-    color: #fff;
+    background:rgba(247, 218, 55);   /* tvoja červená akcent */
+    color: rgb(240, 46, 46); 
     border-radius: 6px;
     cursor: pointer;
     height: 100px;
     width: 200px;
     font-size: 30px;
+    border: solid 2px rgb(225,266, 225) ;
     } 
 .controls button:hover {
-    background-color: #862217;
+    background-color: rgb(236, 185, 17);   
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transform: translateY(-5px);
     }
@@ -208,7 +213,7 @@ img.obrazok_1{
     z-index: 1;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transform: translateY(-15px);
-    background-color: #862217;
+    background-color: rgb(236, 185, 17);   
     }
 
 
@@ -302,7 +307,7 @@ p.menu_2_nem_cuon_margin {
     margin-top: 2px;
 }
 em.male_pismo_sushi_menu {
-    color: #862217;
+    color: #b34c11;
     font-size: 27px;
 }
 
@@ -324,7 +329,7 @@ em.male_pismo_sushi_menu {
 
 div.prva_cast_jedalny_listok {
     flex:1 1 auto;
-    border: 2px solid rgb(240, 46, 46);
+    border: 2px solid rgba(247, 218, 55);
     color: black;
     padding:2rem;
     width: 400px;
@@ -335,8 +340,8 @@ div.prva_cast_jedalny_listok {
 h2.nazov_jedal {
     display: flex;
     justify-content: center;
-    background-color: #e74c3c; 
-    color: white;
+    background-color: rgba(247, 218, 55, 0.904);
+    color: rgb(68, 155, 27);
     padding: 10px;
    
 }
@@ -354,7 +359,7 @@ div.jedlo_div {
 }
 
 div.ceny_jedal {
-    color: #c0392b;
+    color: #f88400;
     font-weight: 600;
     line-height: 37px;
 }
@@ -363,7 +368,7 @@ div.druha_cast_jedalny_listok {
     flex: 1 1 auto;
     width: 400px;
 
-    border: 2px solid rgb(240, 46, 46);
+    border: 2px solid rgba(247, 218, 55);
     border-left: none;
     color: black;
     padding:2rem;
@@ -379,8 +384,8 @@ div.druha_cast_jedalny_listok {
 
 
 footer {
-    background-color:  rgb(240, 46, 46);;
-    color: white;
+    background-color: rgba(247, 218, 55);
+    color:  rgb(240, 46, 46); 
     text-align: center;
     padding: 30px 10px;
 }
