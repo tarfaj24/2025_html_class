@@ -150,21 +150,21 @@ header {
     transition: 0.8s;
 }
 
-.main_article_flex {
+.div_main_section_flex {
     display: flex;
     justify-content: flex-start;
     margin-left: 10vw;
 }
 
 
-article {
+section {
     display: flex;
     flex-direction: column;
     gap: 60px;
     margin-top: 10vw;
 }
 
-.section_it_services p{
+.article_it_services p{
     color: white;
     line-height: clamp(1rem, 5vw, 8rem);
     white-space: nowrap;
