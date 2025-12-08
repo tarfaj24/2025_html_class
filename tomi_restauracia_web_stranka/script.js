@@ -1,8 +1,14 @@
+//nav menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav_menu_mobil');
 
 const buttons = document.querySelectorAll('.controls button');
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   
-  const sections = document.querySelectorAll('.jedalny_listok_papier');
+const sections = document.querySelectorAll('.jedalny_listok_papier');
+
+
+
 
   // Najprv skryjeme všetky okrem prvej sekcie
   sections.forEach((section, index) => {
@@ -81,6 +87,8 @@ buttons.forEach(btn => {
   });
 });
 
-
+hamburger.addEventListener('click', () => {
+  nav_menu_mobil.classList.toggle('active');
+});
  
 
