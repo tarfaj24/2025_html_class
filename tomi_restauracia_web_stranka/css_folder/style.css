@@ -7,7 +7,6 @@
 }
 html{
     font-size: 16px;
-    border:2px solid green;
    
 
 }
@@ -362,15 +361,15 @@ div.nazov_jedla_a_cena {
 div.jedlo_div {
     /* border: 1px solid; */
     max-width: 17rem;
-    line-height: 0.985em;
+    line-height: 1.2em; /* 0.985*/
     
 }
 
 div.ceny_jedal {
     color: #f88400;
     font-weight: 600;
-    line-height: 0.985em;
-    white-space: nowrap;
+    line-height: 1.2em;
+    white-space: nowrap;    /*0.985 */
     
 
 }
@@ -415,6 +414,14 @@ div.druha_cast_jedalny_listok {
 }
 
 
+.section_contact article p{
+    margin-left: 40px;
+}
+.section_contact article h4{
+    font-weight: normal;
+}
+
+
 
 .gallery {
     
@@ -446,7 +453,7 @@ div.druha_cast_jedalny_listok {
 
 footer {
     background-color: rgba(247, 218, 55);
-    color:  rgb(240, 46, 46); 
+    color:  rgb(0, 0, 0); 
     text-align: center;
     padding: 30px 10px;
     display: flex;
@@ -457,6 +464,7 @@ footer {
     border: 1px solid blueviolet;
     min-width: 320px;
     border: 1px solid green;
+    font-size: 25px;
     
     
  
@@ -474,12 +482,7 @@ footer img{
     article.jedalny_listok{
         font-size: 0.8rem;
         line-height: 0.8rem;
-        border:3px solid red;
-    
-       
-      
-      
-        
+        border:3px solid red; 
         
     }
     div.jedlo_div {
@@ -500,6 +503,10 @@ footer img{
         border: 1px solid blue;
         padding:1rem;
     }
+    .section_contact {
+    margin-top: 150px;
+    }
+
 }
 
 
@@ -603,6 +610,33 @@ footer img{
         padding:1rem;
     }
 
+    .section_contact {
+        margin-top: 100px;
+        display: flex;
+        color: white;
+        font-size: 17px;
+        font-family: 'Spectral';
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    .mapa{
+        width: 300px;
+    }
+
+    .section_contact article{
+        background-color: #1F1F1F;
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid white;
+        width: 295px;
+
+    }
+    .section_contact article p{
+        margin-left: 25px;
+    }
 
     .email_phone_hide{
         display: none;
@@ -610,6 +644,13 @@ footer img{
     .tel_phone_hide{
         display: none;
         color: black;
+    }
+
+
+
+
+    footer{
+        font-size: 19px;
     }
     
 }
