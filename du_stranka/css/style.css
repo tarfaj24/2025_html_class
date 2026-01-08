@@ -298,3 +298,172 @@ nav.navigation_bottom {
     flex-direction: row;
 }
 
+.contact_article_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap:20px;
+}
+
+
+.article_contact_info {
+    display: flex;
+    color: black;
+    font-size: 25px;
+    font-family: 'Spectral';
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.article_contact_info section{
+    background-color: rgb(226, 224, 216);
+    padding: 40px;
+    border-radius: 15px;
+    border: 4px solid black;
+    font-family: "Poppins";
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+article.article_contact_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section.contact_us_text{
+    width: 550px;
+    gap: 15px;
+    background-color: rgb(226, 224, 216);
+    padding: 20px;
+    border:4px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+.section_contact_info p{
+    margin-left: 40px;
+
+}
+.adresa_text{
+    margin-left: 40px;
+}
+
+.section_contact_info li {
+    margin-left: 50px;
+}
+
+.contact_us_form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: rgb(158, 157, 153);
+    border:4px solid;
+    border-top: 0px;
+    padding: 20px;
+    width: 550px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: "Poppins";
+    
+   
+}
+
+.contact_us_form input{
+    
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid;
+    font-size: 20px;
+    
+}
+.contact_us_form input::placeholder{
+    font-size: large;
+    
+}
+
+.contact_us_form button{
+    height: 45px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+#contact_us_nadpis{
+    font-size: 50px ;
+    text-align: center;
+}
+.thankyouforinterest{
+    font-size: 23px;
+    text-align: center;
+
+}
+
+
+.name_div {
+    display: flex;
+    justify-content: space-between;
+}
+.name_class{
+    width: 210px;
+}
+textarea{
+    border-radius: 5px;
+    border: 2px solid;
+    padding-left: 10px;
+
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+
+/*learn more */
+.about_us_article{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+.about_us_article h2{
+    width: 100%;
+    background-color: rgb(32, 100, 163);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+  
+
+}
+
+.about_us_article p{
+    padding-top: 30px;
+    font-size: 1.5rem;
+    color: black;
+    width: 900px;
+    text-align: justify;
+
+}
+
+.colored_header{
+    background-color: rgb(32, 100, 163);
+}
+.main_colored{
+    background-color: white;
+    height:100vh;
+}
+.about_us_article ul{
+    font-size: 1.7rem;
+    color: black;
+    margin-left: 60px;
+    width: 900px;
+    text-align: justify;
+    line-height: 2rem;
+}
