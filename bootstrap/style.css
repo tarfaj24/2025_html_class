@@ -1,0 +1,10 @@
+form{
+    width: 600px;
+    
+    
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -267,3 +267,9 @@ nav.navigation_bottom {
     display: flex;
     flex-direction: row;
 }
+
+
+
+.label_for_message{
+    display: block;
+}
