@@ -7,8 +7,11 @@
 }
 html{
     font-size: 16px;
+   
+
 }
 body {
+   
     margin:0;
     background-image: url("../obrazky/background_hoa_phuong.jpg");
     background-size: 100vw auto;
@@ -19,11 +22,14 @@ body {
 
 
     
-
+em{
+    overflow: hidden;
+     text-overflow: ellipsis;
+}
     
 header {
     top:0;
-    background-color:  rgb(240, 46, 46);
+    background-color:  #1B1B1B;
     
     width: 100%;
     position:fixed;
@@ -33,28 +39,40 @@ header {
     display:flex;
     
     
-    display: flex;
+ 
     align-items: center; 
     justify-content: space-between;
+   
     
     padding-left:25px;
-    max-width: 2100px;
+    max-width: 2000px;;
     margin: 0 auto;
-    background-color:  rgba(247, 218, 55);
+    
+    
 
     
     
 }
 
 
-  
+
+.header_nadpis_a_logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+
     
     
 
 
 main {
-    margin-top: 250px;
-    padding-bottom: 500px;
+   
+
+    padding-top: 250px;
+
 }
     
     
@@ -66,13 +84,27 @@ header h1{
     justify-content: center;
     white-space: nowrap;
     flex: 0 1 auto;
-    font-size: clamp(1.3rem, 2vw, 3rem); /*min preferred max velkost vw je viewport 2.5 percent*/ 
+    font-size: clamp(1rem, 2vw, 3rem); /*min preferred max velkost vw je viewport 2.5 percent*/ 
     font-weight: 700;
     margin-right: auto;
     padding-right: 5vw;
-    color:rgb(240, 46, 46);
+    color:#F2F2F2
     
 }
+
+
+.hlavny_nadpis_restauracie_odkaz{
+    text-decoration: none;
+}
+
+header:hover{
+    background-color:#e08d08 ;
+    transition: 0.8s;
+    
+}
+
+
+ 
 nav {
     flex: 0 1  auto;
     margin-right: 10vw;
@@ -89,7 +121,7 @@ nav {
 
 img.logo_restauracie {
     flex:0 0 auto;
-    width:clamp(5rem, 7vw,9rem);
+    width:clamp(3rem, 7vw,9rem);
     height:auto;
     
     
@@ -100,7 +132,7 @@ ul.nadpisy {
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    color:rgb(240, 46, 46);
+    color:#F2F2F2;
     font-size: 30px;
     list-style-type: none;
     flex-direction: row;
@@ -119,11 +151,27 @@ ul.nadpisy li a{
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.3rem, 2vw, 3rem);
-    color:rgb(240, 46, 46);
+    font-size: clamp(1rem, 2vw, 3rem);
+    color:#F2F2F2;
+    display: flex;
+    line-height: 1.2rem;
 }
 
 
+.header_container:hover a{
+    color: #1F1F1F;
+}
+.header_container:hover h1{
+    color: #1F1F1F;
+}
+
+.hamburger{
+    display:none;
+}
+
+.nav_menu_mobil{
+    display:none;
+}
 
 
 
@@ -131,7 +179,7 @@ ul.nadpisy li a{
 article.uvod_article {
     font-family: 'Playfair Display', serif;
     width:100%;
-    max-width: 2100px;
+    max-width: 2000px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -147,33 +195,29 @@ div.border_uvod {
     flex:1 1 500px ;
     font-size: clamp(17px,1.5vw,30px);
     padding:2em;
-    background-color:  rgba(247, 218, 55);
+    background-color:  #262626;
     display: flex;
     flex-direction: column;
+    width: 50vw;
+   
 
 }
 article.uvod_article p {
-    color:rgb(240, 46, 46);
+    color:#F2F2F2;
 }
 article.uvod_article h1 {
-    color:rgb(240, 46, 46);
+    color:#ffac33;
 }
 
 
 
-#uvod_id {
-    scroll-margin-top: 190px;
-}
-
-#jedalny_listok_id {
-    scroll-margin-top: 280px;
-}
 
 img.obrazok_1{
     flex: 1 1 50px;      
     width: 50vw; /* roztiahne sa a zmenší podľa dostupného miesta */
     max-width: 100%;       /* nikdy sa nezväčší viac než rodič */
-    height: auto;          
+    height: auto;       
+   
     
 
 
@@ -189,30 +233,30 @@ img.obrazok_1{
       margin-bottom: 16px;
       flex-wrap: wrap;
       justify-content: center;
+      margin-top: 200px;
     }
 
 .controls button {
     padding: 8px 14px;
-    background:rgba(247, 218, 55);   /* tvoja červená akcent */
-    color: rgb(240, 46, 46); 
+    background:#ffac33;   /* tvoja červená akcent */
+    color: #1B1B1B; 
     border-radius: 6px;
     cursor: pointer;
-    height: 100px;
-    width: 200px;
     font-size: 30px;
+    font-family: "Montserrat",sans-serif;
     border: solid 2px rgb(225,266, 225) ;
+    width: 200px;
+    height: 100px;
     } 
 .controls button:hover {
     background-color: rgb(236, 185, 17);   
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    transform: translateY(-5px);
     }
     
 
 .controls button[aria-pressed="true"] {
     z-index: 1;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    transform: translateY(-15px);
     background-color: rgb(236, 185, 17);   
     }
 
@@ -225,8 +269,10 @@ img.obrazok_1{
 
 article.jedalny_listok {
     display:flex;
-    font-size: 1.5rem;
     justify-content: center;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    line-height: 1rem;
     
     
 }
@@ -234,13 +280,13 @@ article.jedalny_listok {
 
 
 article.jedalny_listok em.male_pismo {
-    font-size: 22px;
+    font-size: 0.6em;
+    font-family: "Montserrat";
+    line-height: 1em;
+    
 }
 
 
-article.jedalny_listok p em.male_pismo {
-    font-size: 20px;
-}
 
 
 
@@ -252,13 +298,13 @@ section.jedalny_listok_papier {
     border: none;
     color: black;
     flex-wrap: wrap;
-    width: 70rem;
+    width: 60rem;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
     justify-content: center;
 
-;
+
     
 }
 
@@ -266,65 +312,23 @@ section.jedalny_listok_papier {
 
 section.jedalny_listok_papier {
     font-family: 'Spectral';
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.9em;
+    line-height: 2em;
 }
 
 p.doplnok_jedla {
-    font-size: 22px;
+    font-size: 0.74em;
     font-family: 'Noto Serif', serif !important;
     
 }
 
-.nemcuon {
-    margin-top:7px;
-}
-.pokesalat {
-    margin-top:5px;
-}
 
-
-
-
-
-p.buncha {
-    margin-top: 10px;
-    line-height: 35.5px;
-}
-p.photron { 
-    margin-top: 5px;
-}
-/* p.bunnem {
-    margin-top: 16px;
-}
-p.bunxao {
-    margin-top: -20px;
-}  */
-p.menu2_up {
-    margin-top: -2px;
-}
-p.menu_2_nem_cuon_margin {
-    margin-top: 2px;
-}
 em.male_pismo_sushi_menu {
     color: #b34c11;
-    font-size: 27px;
+    font-size: 1em;
 }
 
-.nigiri_up {
-    margin-top: -3px;
-}
 
-.maki_up{
-    margin-top: -5px;
-}
-
-.tempura_up_1{
-    margin-top: -5px;
-}
-.urumaki_up{
-    margin-top: -5px;
-}
 
 
 div.prva_cast_jedalny_listok {
@@ -343,25 +347,31 @@ h2.nazov_jedal {
     background-color: rgba(247, 218, 55, 0.904);
     color: rgb(68, 155, 27);
     padding: 10px;
+    line-height: 1.3em;
+    font-size: 1.3em;
    
 }
 
 div.nazov_jedla_a_cena {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 div.jedlo_div {
     /* border: 1px solid; */
-    max-width: 15rem;
+    max-width: 17rem;
+    line-height: 1.2em; /* 0.985*/
     
 }
 
 div.ceny_jedal {
     color: #f88400;
     font-weight: 600;
-    line-height: 37px;
+    line-height: 1.2em;
+    white-space: nowrap;    /*0.985 */
+    
+
 }
 
 div.druha_cast_jedalny_listok {
@@ -375,7 +385,6 @@ div.druha_cast_jedalny_listok {
 }
 
 .jedalny_listok_papier:hover {
-  transform: scale(1.03);
   transition: 0.2s;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   z-index: 3;
@@ -383,11 +392,265 @@ div.druha_cast_jedalny_listok {
 }
 
 
-footer {
-    background-color: rgba(247, 218, 55);
-    color:  rgb(240, 46, 46); 
-    text-align: center;
-    padding: 30px 10px;
+
+.section_contact {
+    margin-top: 250px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-family: 'Spectral';
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.section_contact article{
+    background-color: #1F1F1F;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid white;
+
 }
 
 
+.section_contact article p{
+    margin-left: 40px;
+}
+.section_contact article h4{
+    font-weight: normal;
+}
+
+
+
+.gallery {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 2000px;
+    margin:0 auto;
+    gap: 10px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    place-items: center;    
+    place-content: center;  
+    padding: 0px 100px 0px 100px;
+
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgba(247, 218, 55);
+    color:  rgb(0, 0, 0); 
+    text-align: center;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid blueviolet;
+    min-width: 320px;
+    border: 1px solid green;
+    font-size: 25px;
+    
+    
+ 
+
+    }   
+
+
+
+footer img{
+    width: 70px;
+    height:auto;
+}
+/*tablety*/
+@media (max-width: 1024px){
+    article.jedalny_listok{
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        border:3px solid red; 
+        
+    }
+    div.jedlo_div {
+    
+    max-width: 216px;
+    }
+    section.jedalny_listok_papier {
+        width: 35rem;
+        border: 5px solid blue;
+    }
+    div.prva_cast_jedalny_listok{
+        width:320px;
+        padding:1rem;
+        
+    }
+    div.druha_cast_jedalny_listok{
+        width:320px;
+        border: 1px solid blue;
+        padding:1rem;
+    }
+    .section_contact {
+    margin-top: 150px;
+    }
+
+}
+
+
+/* Telefony */
+@media (max-width: 600px) {
+    body{
+        background-image: url("../obrazky/background_hoa_phuong_mobil.jpg");
+        background-size: cover;
+    }
+
+    main{
+        padding-top: 100px;
+    }
+
+    .hamburger{
+        margin-right: 50px;
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+
+    }
+
+
+
+    .navigacia{
+   
+        display:none;
+    }
+    
+    .nav_menu_mobil{
+        position: fixed;
+        top: 50px;
+        right: 0px;
+        display: none;
+        justify-content: center;
+        margin-right: 0;
+        background: linear-gradient(to bottom,#b34c11,#ffac33);
+        border: 1px solid red;
+        
+    }
+    
+    .nav_menu_mobil.active{
+        display: flex;
+         
+    }
+
+    .nadpisy_mobil li{
+       list-style-type: none;
+       
+    }
+    .nadpisy_mobil a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #3b2f2f;
+        border: 1px solid white;
+        height: 70px;
+        align-items: center;
+        font-size: 20px;
+        
+        
+    }
+
+    
+    .controls button{
+        width: 140px;
+        height: 60px;
+        font-size: 18px;
+        padding: 2px 3px;
+        font-weight: 500;
+    }
+    /*jedalny listok*/
+    article.jedalny_listok{
+        font-size: 0.6rem;
+        line-height: 0.6rem;
+        border:3px solid red;
+    
+       
+      
+      
+        
+        
+    }
+    div.jedlo_div {
+    
+    max-width: 164px;
+    }
+    section.jedalny_listok_papier {
+        width: 20rem;
+        border: 1px solid blue;
+    }
+    div.prva_cast_jedalny_listok{
+        width:320px;
+        padding:1rem;
+        
+    }
+    div.druha_cast_jedalny_listok{
+        width:320px;
+        border: 1px solid blue;
+        padding:1rem;
+    }
+
+    .section_contact {
+        margin-top: 100px;
+        display: flex;
+        color: white;
+        font-size: 17px;
+        font-family: 'Spectral';
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    .mapa{
+        width: 300px;
+    }
+
+    .section_contact article{
+        background-color: #1F1F1F;
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid white;
+        width: 295px;
+
+    }
+    .section_contact article p{
+        margin-left: 25px;
+    }
+
+    .email_phone_hide{
+        display: none;
+    }
+    .tel_phone_hide{
+        display: none;
+        color: black;
+    }
+
+
+
+
+    footer{
+        font-size: 19px;
+    }
+    
+}
