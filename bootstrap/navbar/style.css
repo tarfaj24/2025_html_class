@@ -1,0 +1,8 @@
+.karty{
+    display: flex;
+    flex-direction: row;
+}
+#navbarSupportedContent{
+    justify-content: flex-end;
+    
+}
